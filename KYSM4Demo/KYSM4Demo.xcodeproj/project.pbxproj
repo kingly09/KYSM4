@@ -16,6 +16,7 @@
 		BC0D65721FB05A9500B2D7FF /* KYSM4DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0D65711FB05A9500B2D7FF /* KYSM4DemoTests.m */; };
 		BC0D657D1FB05A9500B2D7FF /* KYSM4DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0D657C1FB05A9500B2D7FF /* KYSM4DemoUITests.m */; };
 		BC0D658D1FB05D4D00B2D7FF /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658B1FB05D4D00B2D7FF /* sm4.c */; };
+		BC0D65901FB05DAF00B2D7FF /* paddingBytes.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BC0D657E1FB05A9500B2D7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC0D658B1FB05D4D00B2D7FF /* sm4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sm4.c; sourceTree = "<group>"; };
 		BC0D658C1FB05D4D00B2D7FF /* sm4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sm4.h; sourceTree = "<group>"; };
+		BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paddingBytes.c; sourceTree = "<group>"; };
+		BC0D658F1FB05DAF00B2D7FF /* paddingBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddingBytes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 			children = (
 				BC0D658B1FB05D4D00B2D7FF /* sm4.c */,
 				BC0D658C1FB05D4D00B2D7FF /* sm4.h */,
+				BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */,
+				BC0D658F1FB05DAF00B2D7FF /* paddingBytes.h */,
 			);
 			name = KYSM4;
 			path = ../../KYSM4;
@@ -283,6 +288,7 @@
 				BC0D65681FB05A9500B2D7FF /* main.m in Sources */,
 				BC0D658D1FB05D4D00B2D7FF /* sm4.c in Sources */,
 				BC0D655A1FB05A9500B2D7FF /* AppDelegate.m in Sources */,
+				BC0D65901FB05DAF00B2D7FF /* paddingBytes.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
