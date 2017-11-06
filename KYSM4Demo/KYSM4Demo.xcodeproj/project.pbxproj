@@ -17,6 +17,7 @@
 		BC0D657D1FB05A9500B2D7FF /* KYSM4DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0D657C1FB05A9500B2D7FF /* KYSM4DemoUITests.m */; };
 		BC0D658D1FB05D4D00B2D7FF /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658B1FB05D4D00B2D7FF /* sm4.c */; };
 		BC0D65901FB05DAF00B2D7FF /* paddingBytes.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */; };
+		BC0D65931FB05F8E00B2D7FF /* NSString+KYSM4.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		BC0D658C1FB05D4D00B2D7FF /* sm4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sm4.h; sourceTree = "<group>"; };
 		BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paddingBytes.c; sourceTree = "<group>"; };
 		BC0D658F1FB05DAF00B2D7FF /* paddingBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddingBytes.h; sourceTree = "<group>"; };
+		BC0D65911FB05F8E00B2D7FF /* NSString+KYSM4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KYSM4.h"; sourceTree = "<group>"; };
+		BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYSM4.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				BC0D658C1FB05D4D00B2D7FF /* sm4.h */,
 				BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */,
 				BC0D658F1FB05DAF00B2D7FF /* paddingBytes.h */,
+				BC0D65911FB05F8E00B2D7FF /* NSString+KYSM4.h */,
+				BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */,
 			);
 			name = KYSM4;
 			path = ../../KYSM4;
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0D65931FB05F8E00B2D7FF /* NSString+KYSM4.m in Sources */,
 				BC0D655D1FB05A9500B2D7FF /* ViewController.m in Sources */,
 				BC0D65681FB05A9500B2D7FF /* main.m in Sources */,
 				BC0D658D1FB05D4D00B2D7FF /* sm4.c in Sources */,
