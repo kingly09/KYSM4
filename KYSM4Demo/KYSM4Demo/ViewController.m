@@ -20,6 +20,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self cbcDemo];
     [self ECBDemo];
+    
+
 }
 
 
@@ -66,5 +68,6 @@
     NSLog(@"解密: %@", decryptionString);
     
 }
+
 
 @end
