@@ -18,6 +18,8 @@
 		BC0D658D1FB05D4D00B2D7FF /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658B1FB05D4D00B2D7FF /* sm4.c */; };
 		BC0D65901FB05DAF00B2D7FF /* paddingBytes.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */; };
 		BC0D65931FB05F8E00B2D7FF /* NSString+KYSM4.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */; };
+		BCD0EFB51FB14DF3006E8573 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0EFB31FB14DF2006E8573 /* Crashlytics.framework */; };
+		BCD0EFB61FB14DF3006E8573 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0EFB41FB14DF3006E8573 /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		BC0D658F1FB05DAF00B2D7FF /* paddingBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddingBytes.h; sourceTree = "<group>"; };
 		BC0D65911FB05F8E00B2D7FF /* NSString+KYSM4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KYSM4.h"; sourceTree = "<group>"; };
 		BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYSM4.m"; sourceTree = "<group>"; };
+		BCD0EFB31FB14DF2006E8573 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		BCD0EFB41FB14DF3006E8573 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD0EFB51FB14DF3006E8573 /* Crashlytics.framework in Frameworks */,
+				BCD0EFB61FB14DF3006E8573 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,7 @@
 				BC0D65701FB05A9500B2D7FF /* KYSM4DemoTests */,
 				BC0D657B1FB05A9500B2D7FF /* KYSM4DemoUITests */,
 				BC0D65561FB05A9500B2D7FF /* Products */,
+				BCD0EFB21FB14DF2006E8573 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +163,15 @@
 			path = ../../KYSM4;
 			sourceTree = "<group>";
 		};
+		BCD0EFB21FB14DF2006E8573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCD0EFB31FB14DF2006E8573 /* Crashlytics.framework */,
+				BCD0EFB41FB14DF3006E8573 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +182,7 @@
 				BC0D65511FB05A9500B2D7FF /* Sources */,
 				BC0D65521FB05A9500B2D7FF /* Frameworks */,
 				BC0D65531FB05A9500B2D7FF /* Resources */,
+				BCD0EFB11FB14CF4006E8573 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,6 +300,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCD0EFB11FB14CF4006E8573 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 563fe66ba6af4d49b20d51b443782da13193c62f 85075d4ee6ba3bebda76bd334ae3daa9db3b0918a0f7e95052c4237949b9d605";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC0D65511FB05A9500B2D7FF /* Sources */ = {
@@ -459,6 +492,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = KYSM4Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYSM4Demo;
@@ -473,6 +510,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = KYSM4Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYSM4Demo;
