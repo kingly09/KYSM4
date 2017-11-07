@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KYSM4"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "KYSM4是一个基于SM4国密算法的Objective-C的国密SM4算法类库。"
 
   s.homepage     = "https://github.com/kingly09/KYSM4"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/kingly09/KYSM4.git", :tag => s.version.to_s }
   s.social_media_url   = "https://github.com/kingly09"
-  s.source_files = 'KYSM4/**/*}'
+  s.source_files = 'KYSM4/**/*'
   s.framework    = "UIKit"
   s.requires_arc = true
 
