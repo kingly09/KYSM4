@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KYSM4"
-  s.version      = "1.0.2"
+  s.version      = "1.0.4"
   s.summary      = "KYSM4是一个基于SM4国密算法的Objective-C的国密SM4算法类库。"
 
   s.homepage     = "https://github.com/kingly09/KYSM4"
