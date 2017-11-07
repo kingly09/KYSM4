@@ -18,6 +18,17 @@
 		BC0D658D1FB05D4D00B2D7FF /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658B1FB05D4D00B2D7FF /* sm4.c */; };
 		BC0D65901FB05DAF00B2D7FF /* paddingBytes.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */; };
 		BC0D65931FB05F8E00B2D7FF /* NSString+KYSM4.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */; };
+		BC7C5A161FB17327006C5C7A /* KYSM4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7C5A0D1FB17327006C5C7A /* KYSM4.framework */; };
+		BC7C5A1D1FB17327006C5C7A /* KYSM4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7C5A1C1FB17327006C5C7A /* KYSM4Tests.m */; };
+		BC7C5A1F1FB17327006C5C7A /* KYSM4.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7C5A0F1FB17327006C5C7A /* KYSM4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7C5A221FB17327006C5C7A /* KYSM4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7C5A0D1FB17327006C5C7A /* KYSM4.framework */; };
+		BC7C5A241FB17327006C5C7A /* KYSM4.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC7C5A0D1FB17327006C5C7A /* KYSM4.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC7C5A311FB1735D006C5C7A /* sm4.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0D658C1FB05D4D00B2D7FF /* sm4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7C5A321FB17362006C5C7A /* paddingBytes.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0D658F1FB05DAF00B2D7FF /* paddingBytes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7C5A331FB1736C006C5C7A /* NSString+KYSM4.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0D65911FB05F8E00B2D7FF /* NSString+KYSM4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC7C5A351FB174B5006C5C7A /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658B1FB05D4D00B2D7FF /* sm4.c */; };
+		BC7C5A361FB174C0006C5C7A /* NSString+KYSM4.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */; };
+		BC7C5A371FB174C6006C5C7A /* paddingBytes.c in Sources */ = {isa = PBXBuildFile; fileRef = BC0D658E1FB05DAF00B2D7FF /* paddingBytes.c */; };
 		BCD0EFB51FB14DF3006E8573 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0EFB31FB14DF2006E8573 /* Crashlytics.framework */; };
 		BCD0EFB61FB14DF3006E8573 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0EFB41FB14DF3006E8573 /* Fabric.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +48,42 @@
 			remoteGlobalIDString = BC0D65541FB05A9500B2D7FF;
 			remoteInfo = KYSM4Demo;
 		};
+		BC7C5A171FB17327006C5C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0D654D1FB05A9500B2D7FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC7C5A0C1FB17327006C5C7A;
+			remoteInfo = KYSM4;
+		};
+		BC7C5A191FB17327006C5C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0D654D1FB05A9500B2D7FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0D65541FB05A9500B2D7FF;
+			remoteInfo = KYSM4Demo;
+		};
+		BC7C5A201FB17327006C5C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0D654D1FB05A9500B2D7FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC7C5A0C1FB17327006C5C7A;
+			remoteInfo = KYSM4;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC7C5A231FB17327006C5C7A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC7C5A241FB17327006C5C7A /* KYSM4.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BC0D65551FB05A9500B2D7FF /* KYSM4Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYSM4Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +108,12 @@
 		BC0D658F1FB05DAF00B2D7FF /* paddingBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddingBytes.h; sourceTree = "<group>"; };
 		BC0D65911FB05F8E00B2D7FF /* NSString+KYSM4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KYSM4.h"; sourceTree = "<group>"; };
 		BC0D65921FB05F8E00B2D7FF /* NSString+KYSM4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KYSM4.m"; sourceTree = "<group>"; };
+		BC7C5A0D1FB17327006C5C7A /* KYSM4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYSM4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7C5A0F1FB17327006C5C7A /* KYSM4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYSM4.h; sourceTree = "<group>"; };
+		BC7C5A101FB17327006C5C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC7C5A151FB17327006C5C7A /* KYSM4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYSM4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7C5A1C1FB17327006C5C7A /* KYSM4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYSM4Tests.m; sourceTree = "<group>"; };
+		BC7C5A1E1FB17327006C5C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD0EFB31FB14DF2006E8573 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		BCD0EFB41FB14DF3006E8573 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +125,7 @@
 			files = (
 				BCD0EFB51FB14DF3006E8573 /* Crashlytics.framework in Frameworks */,
 				BCD0EFB61FB14DF3006E8573 /* Fabric.framework in Frameworks */,
+				BC7C5A221FB17327006C5C7A /* KYSM4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +143,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC7C5A091FB17327006C5C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7C5A121FB17327006C5C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7C5A161FB17327006C5C7A /* KYSM4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +167,8 @@
 				BC0D65571FB05A9500B2D7FF /* KYSM4Demo */,
 				BC0D65701FB05A9500B2D7FF /* KYSM4DemoTests */,
 				BC0D657B1FB05A9500B2D7FF /* KYSM4DemoUITests */,
+				BC7C5A0E1FB17327006C5C7A /* KYSM4 */,
+				BC7C5A1B1FB17327006C5C7A /* KYSM4Tests */,
 				BC0D65561FB05A9500B2D7FF /* Products */,
 				BCD0EFB21FB14DF2006E8573 /* Frameworks */,
 			);
@@ -110,6 +180,8 @@
 				BC0D65551FB05A9500B2D7FF /* KYSM4Demo.app */,
 				BC0D656D1FB05A9500B2D7FF /* KYSM4DemoTests.xctest */,
 				BC0D65781FB05A9500B2D7FF /* KYSM4DemoUITests.xctest */,
+				BC7C5A0D1FB17327006C5C7A /* KYSM4.framework */,
+				BC7C5A151FB17327006C5C7A /* KYSM4Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +235,24 @@
 			path = ../../KYSM4;
 			sourceTree = "<group>";
 		};
+		BC7C5A0E1FB17327006C5C7A /* KYSM4 */ = {
+			isa = PBXGroup;
+			children = (
+				BC7C5A0F1FB17327006C5C7A /* KYSM4.h */,
+				BC7C5A101FB17327006C5C7A /* Info.plist */,
+			);
+			path = KYSM4;
+			sourceTree = "<group>";
+		};
+		BC7C5A1B1FB17327006C5C7A /* KYSM4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC7C5A1C1FB17327006C5C7A /* KYSM4Tests.m */,
+				BC7C5A1E1FB17327006C5C7A /* Info.plist */,
+			);
+			path = KYSM4Tests;
+			sourceTree = "<group>";
+		};
 		BCD0EFB21FB14DF2006E8573 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +264,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BC7C5A0A1FB17327006C5C7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7C5A1F1FB17327006C5C7A /* KYSM4.h in Headers */,
+				BC7C5A331FB1736C006C5C7A /* NSString+KYSM4.h in Headers */,
+				BC7C5A321FB17362006C5C7A /* paddingBytes.h in Headers */,
+				BC7C5A311FB1735D006C5C7A /* sm4.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		BC0D65541FB05A9500B2D7FF /* KYSM4Demo */ = {
 			isa = PBXNativeTarget;
@@ -183,10 +287,12 @@
 				BC0D65521FB05A9500B2D7FF /* Frameworks */,
 				BC0D65531FB05A9500B2D7FF /* Resources */,
 				BCD0EFB11FB14CF4006E8573 /* ShellScript */,
+				BC7C5A231FB17327006C5C7A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BC7C5A211FB17327006C5C7A /* PBXTargetDependency */,
 			);
 			name = KYSM4Demo;
 			productName = KYSM4Demo;
@@ -229,6 +335,43 @@
 			productReference = BC0D65781FB05A9500B2D7FF /* KYSM4DemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BC7C5A0C1FB17327006C5C7A /* KYSM4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7C5A291FB17327006C5C7A /* Build configuration list for PBXNativeTarget "KYSM4" */;
+			buildPhases = (
+				BC7C5A081FB17327006C5C7A /* Sources */,
+				BC7C5A091FB17327006C5C7A /* Frameworks */,
+				BC7C5A0A1FB17327006C5C7A /* Headers */,
+				BC7C5A0B1FB17327006C5C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYSM4;
+			productName = KYSM4;
+			productReference = BC7C5A0D1FB17327006C5C7A /* KYSM4.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC7C5A141FB17327006C5C7A /* KYSM4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7C5A2A1FB17327006C5C7A /* Build configuration list for PBXNativeTarget "KYSM4Tests" */;
+			buildPhases = (
+				BC7C5A111FB17327006C5C7A /* Sources */,
+				BC7C5A121FB17327006C5C7A /* Frameworks */,
+				BC7C5A131FB17327006C5C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC7C5A181FB17327006C5C7A /* PBXTargetDependency */,
+				BC7C5A1A1FB17327006C5C7A /* PBXTargetDependency */,
+			);
+			name = KYSM4Tests;
+			productName = KYSM4Tests;
+			productReference = BC7C5A151FB17327006C5C7A /* KYSM4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,6 +395,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = BC0D65541FB05A9500B2D7FF;
 					};
+					BC7C5A0C1FB17327006C5C7A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					BC7C5A141FB17327006C5C7A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC0D65541FB05A9500B2D7FF;
+					};
 				};
 			};
 			buildConfigurationList = BC0D65501FB05A9500B2D7FF /* Build configuration list for PBXProject "KYSM4Demo" */;
@@ -270,6 +422,8 @@
 				BC0D65541FB05A9500B2D7FF /* KYSM4Demo */,
 				BC0D656C1FB05A9500B2D7FF /* KYSM4DemoTests */,
 				BC0D65771FB05A9500B2D7FF /* KYSM4DemoUITests */,
+				BC7C5A0C1FB17327006C5C7A /* KYSM4 */,
+				BC7C5A141FB17327006C5C7A /* KYSM4Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,6 +447,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BC0D65761FB05A9500B2D7FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7C5A0B1FB17327006C5C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7C5A131FB17327006C5C7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,6 +515,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC7C5A081FB17327006C5C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7C5A371FB174C6006C5C7A /* paddingBytes.c in Sources */,
+				BC7C5A361FB174C0006C5C7A /* NSString+KYSM4.m in Sources */,
+				BC7C5A351FB174B5006C5C7A /* sm4.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7C5A111FB17327006C5C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7C5A1D1FB17327006C5C7A /* KYSM4Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -359,6 +545,21 @@
 			isa = PBXTargetDependency;
 			target = BC0D65541FB05A9500B2D7FF /* KYSM4Demo */;
 			targetProxy = BC0D65791FB05A9500B2D7FF /* PBXContainerItemProxy */;
+		};
+		BC7C5A181FB17327006C5C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC7C5A0C1FB17327006C5C7A /* KYSM4 */;
+			targetProxy = BC7C5A171FB17327006C5C7A /* PBXContainerItemProxy */;
+		};
+		BC7C5A1A1FB17327006C5C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0D65541FB05A9500B2D7FF /* KYSM4Demo */;
+			targetProxy = BC7C5A191FB17327006C5C7A /* PBXContainerItemProxy */;
+		};
+		BC7C5A211FB17327006C5C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC7C5A0C1FB17327006C5C7A /* KYSM4 */;
+			targetProxy = BC7C5A201FB17327006C5C7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -580,6 +781,82 @@
 			};
 			name = Release;
 		};
+		BC7C5A251FB17327006C5C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KYSM4/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYSM4;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC7C5A261FB17327006C5C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KYSM4/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYSM4;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC7C5A271FB17327006C5C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYSM4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYSM4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYSM4Demo.app/KYSM4Demo";
+			};
+			name = Debug;
+		};
+		BC7C5A281FB17327006C5C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5MJRYE2S;
+				INFOPLIST_FILE = KYSM4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bc.KYSM4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYSM4Demo.app/KYSM4Demo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,6 +892,24 @@
 			buildConfigurations = (
 				BC0D65881FB05A9500B2D7FF /* Debug */,
 				BC0D65891FB05A9500B2D7FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7C5A291FB17327006C5C7A /* Build configuration list for PBXNativeTarget "KYSM4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7C5A251FB17327006C5C7A /* Debug */,
+				BC7C5A261FB17327006C5C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7C5A2A1FB17327006C5C7A /* Build configuration list for PBXNativeTarget "KYSM4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC7C5A271FB17327006C5C7A /* Debug */,
+				BC7C5A281FB17327006C5C7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
