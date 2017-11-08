@@ -42,9 +42,79 @@ $ brew install carthage
 $ github "kingly09/KYSM4" 
 ```
 
-把 `KYMenu.framework` 拖到 Xcode 项目中使用。
+把 `KYSM4.framework` 拖到 Xcode 项目中使用。
 
 详细怎么使用`Cartfile`管理iOS第三方依赖库 ，请见[https://my.oschina.net/kinglyphp/blog/1560525](https://my.oschina.net/kinglyphp/blog/1560525) 
 
 
+# 实现的功能
 
+1. 在CBC模式下，利用给定的密钥，初始化向量，对字符串加解密；
+2. 在ECB模式下，利用给定的密钥，对字符串加解密。
+
+# 如何使用
+
+在您需要使用`KYSM4 ` 加密解密的类中，import 头文件`NSString+KYSM4.h`即可 。
+
+在CBC模式下，利用给定的密钥，初始化向量，对字符串加解密；
+
+
+```
+    //密钥
+    NSString *secretKey = @"JeF8U9wHFOMfs2Y8";
+    //初始化向量
+    NSString *iv = @"UISwD9fW6cFh9SNS";
+    // 需要加密的字符串
+    NSString *testString = @"CBC模式示例:测试 国密Sm4算法";
+    
+    NSString *encryptionString = [testString encryptionWithSM4Key:secretKey iv:iv];
+    NSLog(@"加密: %@", encryptionString);
+    
+    NSString *decryptionString = [encryptionString decryptionWithSM4Key:secretKey iv:iv];
+    NSLog(@"解密: %@", decryptionString);
+```
+
+
+ 在ECB模式下，利用给定的密钥，对字符串加解密。
+ 
+ 
+ ```
+  //密钥
+    NSString *secretKey = @"JeF8U9wHFOMfs2Y8";
+    // 需要加密的字符串
+    NSString *testString = @"ECB模式示例:测试 国密Sm4算法";
+    
+    NSString *encryptionString = [testString encryptionWithSM4Key:secretKey];
+    NSLog(@"加密: %@", encryptionString);
+    
+    NSString *decryptionString = [encryptionString decryptionWithSM4Key:secretKey];
+    NSLog(@"解密: %@", decryptionString);
+
+ ```
+ 
+# 更多有关SM4国密算法
+ 
+ 国家密码管理局：[http://www.oscca.gov.cn/](http://www.oscca.gov.cn/)
+ 
+ 
+ SM4国密算法实现分析：[http://blog.csdn.net/archimekai/article/details/53095993](http://blog.csdn.net/archimekai/article/details/53095993)
+ 
+ 国产密码安全算法总结：[http://blog.csdn.net/u012198553/article/details/60964156](http://blog.csdn.net/u012198553/article/details/60964156)
+ 
+  SMS4 密码算法：[pdf下载](https://github.com/kingly09/KYSM4/raw/master/sm4.pdf)
+
+
+#  联系与建议反馈
+
+>
+> **weibo:** [http://weibo.com/balenn](http://weibo.com/balenn)
+>
+> **QQ:** 362108564
+>
+
+如果有任何你觉得不对的地方，或有更好的建议，以上联系都可以联系我。 十分感谢！ 
+ 
+
+# LICENSE
+
+**KYSM4** 被许可在 **MIT** 协议下使用。查阅 **LICENSE** 文件来获得更多信息。
