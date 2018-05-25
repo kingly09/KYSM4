@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="KYSM4Demo" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="KYSM4Demo" TARGET_NAME="KYSM4Demo" CONFIG_NAME="Debug" SCHEME_NAME="KYSM4Demo" RUN_TARGET_PROJECT_NAME="KYSM4Demo" RUN_TARGET_NAME="KYSM4Demo" MAKE_ACTIVE="TRUE">
+    <envs />
+    <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+      <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>
